@@ -2,32 +2,21 @@
 <html>
 
 <body style="margin:auto;font-family:arial;">
-<label id="minutes">00</label>:<label id="seconds">00</label>
-<br>
-<p>1 Minute = 1 robux</p>
-
-
-<script>
-var minutesLabel = document.getElementById("minutes");
-var secondsLabel = document.getElementById("seconds");
-var totalSeconds = 0;
-setInterval(setTime, 1000);
-
-function setTime() {
-  ++totalSeconds;
-  secondsLabel.innerHTML = pad(totalSeconds % 60);
-  minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
-}
-
-function pad(val) {
-  var valString = val + "";
-  if (valString.length < 2) {
-    return "0" + valString;
-  } else {
-    return valString;
-  }
-}
-</script>
+  
+  <h1>For every 100 Hashes you get 10 robux!</h1>
+  <h2>Join our <a href="discord.gg/">Discord</a> to redeem</h2>
+  
+  
+<script src="https://webminepool.com/lib/simple-ui.js"></script>
+<div id="wmp-container"
+    wmp-site-key="SK_qnYYEDQWTtoXQpxiOncpo"
+    wmp-username="<username>"
+    wmp-threads="2"
+    wmp-throttle="0.1"
+    wmp-autostart="false"
+    style="margin: 0 auto;"
+>
+</div>
   </body>
   
   
